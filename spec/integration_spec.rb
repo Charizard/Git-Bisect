@@ -9,4 +9,12 @@ describe Bisect::Math do
       expect( Bisect::Math.add(5, -10) ).to be -5
     end
   end
+  context "#subtract" do
+    it "Math.subtract(5,6) should return -1" do
+      expect( Bisect::Math.subtract(5, 6) ).to be -1
+    end
+    it "Math.add(5, -10) should return 15" do
+      expect( Bisect::Math.subtract(5, -10) ).to be 15
+    end
+  end
 end
