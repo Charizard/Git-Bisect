@@ -16,5 +16,13 @@ describe Bisect::Math do
     it "Math.add(5, -10) should return 15" do
       expect( Bisect::Math.subtract(5, -10) ).to be 15
     end
+  end  
+  context "#multiply" do
+    it "Math.multiply(5,6) should return 30" do
+      expect( Bisect::Math.multiply(5, 6) ).to be 30
+    end
+    it "Math.multiply(5, -10) should return -50" do
+      expect( Bisect::Math.multiply(5, -10) ).to be -50
+    end
   end
 end

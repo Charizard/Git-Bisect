@@ -7,7 +7,12 @@ module Bisect
 
     #Subtraction
     def self.subtract(a, b)
-      a - b 
+      (a - b) + 1 
+    end
+
+    # Multiply
+    def self.multiply(a, b)
+      a * b
     end
   end
 end
