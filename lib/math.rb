@@ -24,5 +24,10 @@ module Bisect
     def self.next_power_of_2(a)
       2 ** ::Math.log2(a).ceil
     end
+
+    # Minimum
+    def self.min(array = [])
+      array.min
+    end
   end
 end

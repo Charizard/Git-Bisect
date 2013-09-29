@@ -48,4 +48,10 @@ describe Bisect::Math do
       expect( Bisect::Math.next_power_of_2(100) ).to eq 128
     end
   end
+
+  context "#min" do
+    it "Math.min([2,5,0,8,90,3]) should return 0" do
+      expect( Bisect::Math.min([2,5,0,8,90,3]) ).to be 0
+    end
+  end
 end
