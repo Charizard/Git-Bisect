@@ -35,6 +35,9 @@ describe Bisect::Math do
     it "Math.divide(5, -10) should return -0.50" do
       expect( Bisect::Math.divide(5, -10) ).to eq -0.50
     end
+    it "Math.divide(5, 0) should raise error" do
+      expect( Bisect::Math.divide(5, 0) ).to eq Float::INFINITY
+    end 
   end
 
   context "#next_power_of_2" do
