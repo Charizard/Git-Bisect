@@ -54,4 +54,10 @@ describe Bisect::Math do
       expect( Bisect::Math.min([2,5,0,8,90,3]) ).to be 0
     end
   end
+
+  context "#max" do
+    it "Math.max([2,5,0,8,90,3]) should return 90" do
+      expect( Bisect::Math.max([2,5,0,8,90,3]) ).to be 90
+    end
+  end
 end

@@ -29,5 +29,10 @@ module Bisect
     def self.min(array = [])
       array.min
     end
+
+    # Maximum
+    def self.max(array = [])
+      array.max
+    end
   end
 end
