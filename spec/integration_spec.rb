@@ -36,4 +36,13 @@ describe Bisect::Math do
       expect( Bisect::Math.divide(5, -10) ).to eq -0.50
     end
   end
+
+  context "#next_power_of_2" do
+    it "Math.next_power_of_2(5) should return 8" do
+      expect( Bisect::Math.next_power_of_2(5) ).to eq 8
+    end
+    it "Math.next_power_of_2(100) should return 128" do
+      expect( Bisect::Math.next_power_of_2(100) ).to eq 128
+    end
+  end
 end
