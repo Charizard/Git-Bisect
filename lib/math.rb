@@ -14,5 +14,10 @@ module Bisect
     def self.multiply(a, b)
       a * b
     end
+
+    # Divide
+    def self.divide(a, b)
+      (a / b.to_f).round(2)
+    end
   end
 end

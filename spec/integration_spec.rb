@@ -9,6 +9,7 @@ describe Bisect::Math do
       expect( Bisect::Math.add(5, -10) ).to be -5
     end
   end
+
   context "#subtract" do
     it "Math.subtract(5,6) should return -1" do
       expect( Bisect::Math.subtract(5, 6) ).to be -1
@@ -17,12 +18,22 @@ describe Bisect::Math do
       expect( Bisect::Math.subtract(5, -10) ).to be 15
     end
   end  
+  
   context "#multiply" do
     it "Math.multiply(5,6) should return 30" do
       expect( Bisect::Math.multiply(5, 6) ).to be 30
     end
     it "Math.multiply(5, -10) should return -50" do
       expect( Bisect::Math.multiply(5, -10) ).to be -50
+    end
+  end
+
+  context "#divide" do
+    it "Math.divide(5,6) should return 0.83" do
+      expect( Bisect::Math.divide(5, 6) ).to eq 0.83
+    end
+    it "Math.divide(5, -10) should return -0.50" do
+      expect( Bisect::Math.divide(5, -10) ).to eq -0.50
     end
   end
 end
